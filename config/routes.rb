@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  # get 'posts/index'
+  # get 'posts/show'
+  
+  resources :posts
+  
+
+  get "users/", to: 'welcome#index'
   root 'welcome#index'
   devise_for :users
   # get 'welcome/index'
