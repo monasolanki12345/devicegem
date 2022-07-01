@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  
+  get "users/", to: 'welcome#index'
   devise_for :users
   # get 'welcome/index'
   # get 'static_pages/landing_page'
